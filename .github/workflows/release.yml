@@ -1,4 +1,3 @@
----
 name: Release
 on:
   push:
@@ -9,9 +8,6 @@ jobs:
   build:
     name: Release
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [ 12.x ]
 
     steps:
       - name: Checkout master
@@ -20,7 +16,7 @@ jobs:
       - name: Using Node ${{ matrix.node-version }}
         uses: actions/setup-node@master
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 12.x
 
       - name: Run npm deploy:prod
         run: |
