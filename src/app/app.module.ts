@@ -8,10 +8,10 @@ import {ContentLayoutComponent} from './layout/content-layout/content-layout.com
 import {NavbarComponent} from './layout/navbar/navbar.component';
 import {LoginComponent} from './layout/login/login.component';
 import {SharedModule} from './shared';
-import {AngularFireModule} from '@angular/fire';
+import {AngularFireModule} from '@angular/fire/compat';
 import {environment} from '../environments/environment';
-import {AngularFirestoreModule} from '@angular/fire/firestore';
-import {AngularFireAuthModule} from '@angular/fire/auth';
+import {AngularFirestoreModule} from '@angular/fire/compat/firestore';
+import {AngularFireAuthModule} from '@angular/fire/compat/auth';
 import {MaterialModule} from './shared/material.module';
 
 @NgModule({
